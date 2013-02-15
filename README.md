@@ -24,6 +24,7 @@ Installation
 ```sh
 make
 sudo make install
+sudo reboot
 ```
 
 You need to do `modprobe`, if hid-apple was not enabled.
