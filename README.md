@@ -1,10 +1,16 @@
 hid-apple
 ======================
 
-a linux driver fixed for Apple Wireless Keyboard 2011
+a linux driver fixed for Apple Wireless Keyboard 2011.
+
 
 Installation
 ---------------------
+
+```sh
+make
+sudo make install
+```
 
 
 Reference
