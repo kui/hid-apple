@@ -1,7 +1,7 @@
 hid-apple
 ======================
 
-a linux driver fixed for Apple Wireless Keyboard 2011.
+A Linux driver fixed for Apple Wireless Keyboard 2011.
 
 "fn" key of Apple Wireless Keyboard 2011 does not work on a driver used on Ubuntu 12.04,
 because it's driver is generic-blooth driver.
@@ -26,9 +26,19 @@ make
 sudo make install
 ```
 
+You need to do `modprobe`, if hid-apple was not enabled.
+
+```sh
+lsmod | grep hid_apple	# establish whether hid-apple is enable or not
+echo hid-apple | sudo tee -a /etc/modules
+sudo reboot
+```
+
 
 Reference
 -------------------
 
+* [AppleKeyboard - Community Ubuntu Documentation](https://help.ubuntu.com/community/AppleKeyboard) :
+  How to use this driver
 * [HOW TO Add Support for KYE, UC-logic, and Waltop Tablets in Ubuntu - Ubuntu Forums](http://ubuntuforums.org/showthread.php?t=1946486)
 * <https://launchpadlibrarian.net/94610947/alu2011.patch>
